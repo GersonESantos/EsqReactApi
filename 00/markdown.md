@@ -6,14 +6,14 @@ Octfit é uma aplicação simples para gerenciar workouts (treinos). O repositó
 
 - Iniciar servidor (PowerShell):
 ```powershell
-cd C:\Repo2024\EsqReactApi\server
+cd C:\Repo2024\OctfitG\server
 npm install
 npm run dev
 ```
 
 - Iniciar client (PowerShell):
 ```powershell
-cd C:\Repo2024\EsqReactApi\client
+cd C:\Repo2024\OctfitG\client
 npm install
 npm run dev
 ```
@@ -38,8 +38,8 @@ curl http://localhost:4000/api/workouts
 - Criar um workout:
 ```powershell
 curl -Method POST http://localhost:4000/api/workouts `
-    -Body (@{ title = "Treino A"; notes = "Exemplo" } | ConvertTo-Json) `
-    -ContentType "application/json"
+	-Body (@{ title = "Treino A"; notes = "Exemplo" } | ConvertTo-Json) `
+	-ContentType "application/json"
 ```
 
 ## Persistência
@@ -74,5 +74,4 @@ code {
 }
 ## Contato
 Para dúvidas ou colaboração, abra uma issue ou envie uma mensagem no repositório.
-
 
